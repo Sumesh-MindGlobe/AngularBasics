@@ -1,0 +1,12 @@
+.lowMarks{
+    color:red;
+    font-style: oblique;
+}
+.mediumMarks{
+    color:yellow;
+    font-style: normal;
+}
+.highMarks{
+color:green;
+font-style:italic;
+}

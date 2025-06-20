@@ -1,0 +1,25 @@
+<p *ngIf="displayValue; else elsePart">ng-if-directive works!</p>
+<ng-template #elsePart>
+    <p>ng-if-directive do not works!</p>
+</ng-template>
+
+<div *ngIf="dValue; then thenPart1; else elsePart1"></div>
+<ng-template #thenPart1>
+    <h2>Then part is displayed</h2>
+</ng-template>
+<ng-template #elsePart1>
+    <h2>Else part is displayed</h2>
+</ng-template>
+
+<h3>ngSwitch</h3>
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">You Picked red color</div>
+    <div *ngSwitchCase="'blue'">You Picked red color</div>
+    <div *ngSwitchCase="'orange'">You Picked red color</div>
+    <div *ngSwitchDefault>Pick again</div>
+</div>
+
+<h3>ngFor</h3>
+<div *ngFor="let i of food ; index as t">
+  <h4>{{t+1}} . {{i}}</h4>
+</div>

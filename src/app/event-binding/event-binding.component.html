@@ -1,0 +1,8 @@
+<p>event-binding works!</p>
+<button (click)="showAlert()">Click here!</button>
+
+<input type="text" (input)="getDetails($event)">
+
+
+<input #username type="text">
+<button (click)="getUsername(username.value)">Login</button>

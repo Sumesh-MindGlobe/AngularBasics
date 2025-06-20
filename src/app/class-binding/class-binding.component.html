@@ -1,0 +1,7 @@
+<p>class-binding works!</p>
+<h3 [ngClass]="{
+    'lowMarks':marks<30,
+    'mediumMarks':marks>30 && marks<40,
+    'highMarks':marks>40
+}">Mark={{marks}}</h3>
+<h2 [class.highMarks]="result">Result</h2>
